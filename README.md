@@ -1,5 +1,5 @@
 # Regularization-RecurrentNN
-This repository contains a flexible recuurent neural network framework that supports various regularization strategies. Regularization is an essential technique in deep learning to prevent overfitting and improve generalization performance.
+This repository contains a flexible recurrent neural network framework that supports various regularization strategies. Regularization is an essential technique in deep learning to prevent overfitting and improve generalization performance.
 
 ## Refactoring
 
