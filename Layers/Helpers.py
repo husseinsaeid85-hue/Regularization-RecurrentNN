@@ -1,3 +1,12 @@
+"""Shared utilities: gradient checking, batch-norm gradients, and toy datasets.
+
+``compute_bn_gradients`` is the only function the layers themselves depend on;
+everything else here exists to exercise the framework -- numerical gradient
+checks, an accuracy metric, and small dataset wrappers (random, Iris, digits,
+MNIST) that expose the ``next()`` interface ``NeuralNetwork.data_layer``
+expects.
+"""
+
 import numpy as np
 import matplotlib.pyplot as plt
 import os

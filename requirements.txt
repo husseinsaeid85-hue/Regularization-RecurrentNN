@@ -1,0 +1,12 @@
+# Core dependency. Every layer, optimizer and constraint is pure NumPy.
+numpy>=1.21
+
+# Used only by Layers/Helpers.py, which provides the batch-normalization
+# gradient helper, numerical gradient checks and the toy dataset loaders.
+matplotlib>=3.4
+
+# Also Layers/Helpers.py only, for the Iris and digits dataset wrappers.
+# Pinned below 1.4: those wrappers call OneHotEncoder(sparse=False), and the
+# `sparse` argument was removed in scikit-learn 1.4 in favour of
+# `sparse_output`.
+scikit-learn>=1.0,<1.4
